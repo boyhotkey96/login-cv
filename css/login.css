@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     background: -webkit-linear-gradient(to right, #64696f, #1050ad);   
     background: -moz-linear-gradient(to right, #64696f, #1050ad);   
     background: -o-linear-gradient(to right, #64696f, #1050ad);   
-    min-height: 100vh; 
+    height: 100vh; 
 }
 
 #wrapper {
@@ -103,6 +104,23 @@ form {
     margin: 10px 0;
 }
 
+@media only screen and (min-width: 200px) {
+    .content {
+        width: 250px;
+    }
+    
+    .avatar {
+        left: 20%;
+    }
+
+    form, .login {
+        width: 200px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
 
 @media only screen and (min-width: 480px) {
     .content {
@@ -113,11 +131,7 @@ form {
         left: 25%;
     }
 
-    form {
-        width: 250px;
-    }
-    
-    .login {
+    form, .login {
         width: 250px;
     }
 
@@ -135,11 +149,7 @@ form {
         left: 30%;    
     }
 
-    form {
-        width: 300px;
-    }
-
-    .login {
+    form, .login {
         width: 300px;
     }
 }
@@ -175,11 +185,7 @@ form {
         left: 35%;  
     }
 
-    form {
-        width: 450px;
-    }
-
-    .login {
+    form, .login {
         width: 450px;
     }
 
@@ -197,11 +203,7 @@ form {
         left: 40%;
     }
     
-    form {
-        width: 550px;
-    }
-
-    .login {
+    form, .login {
         width: 550px;
     }
 
