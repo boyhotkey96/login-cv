@@ -1,4 +1,17 @@
 window.onload = function() {
+    //Bai 8 
+    var input8 = document.querySelector("#input8");
+    var output8 = document.querySelector("#output8");
+    var click8 = document.querySelector("#click8");
+    click8.addEventListener("click", function() {
+        if (input8.value.length <= 0) {
+            alert("Enter input (number)");
+        } else if (input8.value > 0) {
+            output8.value = "Chua lam...!!"
+        } else {
+            output8.value = "Input không hợp lệ (Input là number)";
+        }
+    });
     // Bai 9
     var input9 = document.querySelector("#input9");
     var output9 = document.querySelector("#output9");

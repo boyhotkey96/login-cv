@@ -4,15 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Javascript</title>
+    <title>Javascript - PhungBaDu</title>
     <link rel="stylesheet" href="css/baitap.css">
 </head>
 
 <body>
-
     <head>
         <h1>Phùng Bá Dự</h1>
     </head>
+    <!-- Item -->
+    <div class="baitap">
+        <h2>8. M O O</h2>
+        <div class="bt">
+            <p>Những con bò đang chuẩn bị bắt đầu chơi trò “Moo”. Chúng đứng trên một hàng dài, trong đó mỗi con bò trong
+                hàng sẽ nói một chữ cái nhanh nhất có thể. Con bò nào phạm luật đầu tiên thì sẽ thua. <br>
+                Dãy các kí tự “Moo” có thể kéo dài liên tục và không giới hạn. Chúng sẽ bắt đầu như sau:
+                m o o m o o o m o o m o o o o m o o m o o o m o o m o o o o <br>
+                Dãy kí tự được diễn tả như sau: Gọi S(0)là một trong ba kí tự “m o o”. Sau đó dãy kí tự S(k)sẽ bằng dãy S(k-1)
+                và thêm vào “m o … o” với k+2 chữ o, và sau đó cộng thêm một lần cho S(k-1). Ví dụ: <br>
+                S(0) = "m o o" <br>
+                S(1) = "m o o m o o o m o o" <br>
+                S(2) = "m o o m o o o m o o m o o o o m o o m o o o m o o" <br>
+                Với cách này sẽ tạo được dãy kí tự rất dài, và dãy này sẽ dùng cho game Moo. <br>
+                Cô bò Bessie muốn biết kí tự thứ N của dãy này là chữ “m” hay chữ “o”. Bạn hãy giúp Bessie nhé! <br>
+                Input <br>
+                *Dòng 1: Gồm một số nguyên N(1 <= N <=10^9). <br>
+                    Output <br>
+                    *Dòng 1: Dòng duy nhất chứa kí tự “m” hoặc “o”. <br>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11</td>
+                        <td>m</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="clear"></div>
+        </div>
+        <form action="">
+            <div class="form1">
+                <textarea id="input8" rows="8" cols="80" placeholder=""></textarea>
+                <button type="button" id="click8">Click</button>
+                <textarea id="output8" rows="8" cols="80" placeholder=""></textarea>
+            </div>
+        </form>
+    </div>
     <!-- Item -->
     <div class="baitap">
         <h2>9. Số gần nguyên tố</h2>
