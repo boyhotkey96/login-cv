@@ -5,51 +5,99 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Javascript</title>
-    <link rel="stylesheet" href="">
-    <style>
-    	* {
-    		padding: 0;
-    		margin: 0 auto;
-    	}
-    	body {
-    		width: 1200px;
-    		margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/baitap.css">
 </head>
 
 <body>
-    <!-- Bai 10 Start -->
-    <p>10. Tính sát thương
-        Ursa là một hero rất bá đạo trong DotA, anh có kỹ năng gia tăng sức mạnh sau mỗi cú đánh theo công thức:
-        Di = Di-1 + i với i là số thứ tự cú đánh và Di là lượng sát thương gây ra sau cú đánh đó, với i = 1 thì
-        Di = 1.
-        Thanh mới tập chơi DotA và chơi một hero có lượng máu cơ bản là X. Hero của Thanh không chịu được
-        đòn đánh có sát thương lớn hơn X. Bạn hãy giúp Thanh tính xem có thể chịu được tối đa bao nhiêu cú đánh
-        của Ursa.
-        Input
-        Dòng duy nhất chứa số X (1 <= X <=10000). Output In ra số cú đánh tối đa mà hero của Thanh có thể chịu được.
-    </p>
-    <textarea id="input" rows="4" cols="50">
-    </textarea>
-    <button id="click">click</button>
-    <textarea id="output" rows="4" cols="50">
-	</textarea><br><br>
-    <!-- Bai 10 End -->
 
-    <!-- Bai 1 Start -->
-        <p>1. Nguyên tố hóa học
-    Hóa chất chỉ gồm các nguyên tố C, H, O có trọng lượng 12,1, 16 tương ứng.
-    Nó được biểu diễn dạng "nén", ví dụ COOHHH là CO2H3 hay CH (CO2H) (CO2H) (CO2H) là CH(CO2H)3.
-    Nếu ở dạng nén thì số lần lặp >=2 và <=9.
-    Tính khối lượng hóa chất.
-    Input
-    Gồm một dòng mô tả hóa chất không quá 100 kí tự chỉ gồm C, H, O, (, ), 2,..,9.
-    Output
-    Khối lượng của hóa chất (luôn <=10000).</p><br>
-    <!-- Bai 1 End -->
-
-    <script type="text/javascript" src="js/baitap.js"></script>
+    <head>
+        <h1>Phùng Bá Dự</h1>
+    </head>
+    <!-- Item -->
+    <div class="baitap">
+        <h2>9. Số gần nguyên tố</h2>
+        <div class="bt">
+            <p>Chúng ta đều biết số nguyên tố là số nguyên dương mà chỉ có duy nhất 2 ước phân biệt. Iron man luôn thích
+                những cái đặc biệt và mới mẻ, và anh ra đưa ra 1 định nghĩa mới “Số gần nguyên tố” – là các số nguyên
+                dương mà có đúng 3 ước phân biệt. <br>
+                Bạn được cho 1 mảng có n phần tử, hãy kiểm tra xem từng phần tử trong mảng có phải là số gần nguyên tố
+                hay không. <br>
+                Input <br>
+                Dòng đầu tiên nhập vào số tự nhiên n (1 <= n <=10^5) là số phần tử của mảng. <br>
+                    Dòng tiếp theo nhập n số nguyên dương x[i] (1 <= x[i] <=10^12) <br>
+                        Output <br>
+                        In ra trên n dòng: dòng thứ i in “YES” nếu x[i] là số gần nguyên tố, ngược lại thì in “NO”. <br>
+                        VD:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>4 5 6</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="clear"></div>
+        </div>
+        <form action="">
+            <div class="form1">
+                <textarea id="input9" rows="8" cols="80" placeholder=""></textarea>
+                <button type="button" id="click9">Click</button>
+                <textarea id="output9" rows="8" cols="80" placeholder=""></textarea>
+            </div>
+        </form>
+    </div>
+    <!-- Item -->
+    <div class="baitap">
+        <h2>10. Tính sát thương</h2>
+        <div class="bt">
+            <p>Ursa là một hero rất bá đạo trong DotA, anh có kỹ năng gia tăng sức mạnh sau mỗi cú đánh theo công thức:
+                Di = Di-1 + i với i là số thứ tự cú đánh và Di là lượng sát thương gây ra sau cú đánh đó, với i = 1 thì
+                Di = 1. <br>
+                Thanh mới tập chơi DotA và chơi một hero có lượng máu cơ bản là X. Hero của Thanh không chịu được
+                đòn đánh có sát thương lớn hơn X. Bạn hãy giúp Thanh tính xem có thể chịu được tối đa bao nhiêu cú đánh
+                của Ursa. <br>
+                Input <br>
+                Dòng duy nhất chứa số X (1 <= X <=10000). <br>
+                    Output <br>
+                    In ra số cú đánh tối đa mà hero của Thanh có thể chịu được. <br>
+                    VD: <br>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="clear"></div>
+        </div>
+        <form action="">
+            <div class="form1">
+                <textarea id="input10" rows="8" cols="80" placeholder=""></textarea>
+                <button type="button" id="click10">Click</button>
+                <textarea id="output10" rows="8" cols="80" placeholder=""></textarea>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/baitapjs.js"></script>
 </body>
 
 </html>
